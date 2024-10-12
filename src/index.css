@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #FEAF00;
+    --second-color:#F8D442;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+input:focus {
+    outline: none;
+}
+a {
+    text-decoration: none ;
+}
+button {
+    border: none;
+    cursor: pointer;
+}

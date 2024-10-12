@@ -1,0 +1,77 @@
+.side-bar {
+    position: sticky;
+    padding: 35px;
+    width: 270px;
+    left: 0;
+    background-color:  #F2EAE1;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    text-align: center;
+}
+.side-bar .logo {
+    width: 97.23px;
+    height: 23px;
+    padding-left: 12px;
+    border-left: 4px solid #F8D442;
+    margin: 0 auto;
+}
+.side-bar .logo img {
+    width: 84.89px;
+    height: 23px;
+}
+.side-bar .profile {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 182px;
+    height: 169px;
+    img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 18px;
+        border-radius: 50%;
+    }
+    p {
+        font-size: 17px;
+        font-weight: 700;
+    }
+}
+.side-bar-links {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.side-bar-link {
+    width: 193px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+   
+}
+.side-bar-link:hover ,
+.side-bar-link.active {
+    background-color: var(--main-color); 
+}
+.side-bar .logout {
+    position: absolute;
+    bottom: 35px;
+    font-size: 14px;
+    font-weight: 500;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000; 
+    .logout-icon {
+        padding-left: 23px;
+    }
+}
+.dashboard {
+    display: flex;
+}

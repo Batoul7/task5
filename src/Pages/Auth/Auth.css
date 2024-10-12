@@ -1,0 +1,127 @@
+.register, .login {
+    background: linear-gradient(var(--main-color) 100%, var(--second-color)100%) ;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px 0;
+}
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:34.055vw;
+    height: fit-content;
+    max-width: 476px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 5px 10px 0px #0000001A;
+    padding: 40px 30px 25px;
+
+    .head {
+        text-align: center;
+        margin-bottom:24px ;
+        img {
+            margin: 0 auto 42px;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+     }
+}
+form label {
+    display: block;
+    color: #6C6C6C;
+    margin-bottom: 8px;
+}
+form input {
+    padding: 15px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    width: 47.1698%;
+    margin-bottom: 8px;
+}
+form input[type='email'],
+.login form input[type="password"] {
+    width: 100%;
+}
+form input[type='submit'] {
+    width: 100%;
+    height: 44px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+form input::placeholder {
+    color: #E5E5E5;
+}
+form input:focus {
+    border: 1px solid var(--main-color);
+    caret-color: var(--main-color);
+}
+.upload-img {
+    background: #F8F8FF;
+    border: 1px dashed #384EB74D;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.register p,
+.login p {
+    color: #6C6C6C;
+    text-align: center;
+    font-size: 14px;
+}
+.register p a 
+.login p a{
+    font-weight: 600px;
+    color: var(--main-color);
+}
+.error {
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 5px 15px;
+    margin-top: 8px;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-size: 13px;
+}
+@media (max-width: 1366px) {
+    .form {
+        width:30vw;
+        padding: 30px 20px 20px;
+        .head {
+            margin-bottom:10px ;
+            img {
+                margin: 0 auto 15px;
+            }
+         }
+    }
+    form input {
+        padding: 5px;
+        border: 1px solid #E5E5E5;
+        border-radius: 4px;
+        width: 45.1698%;
+        margin-bottom: 8px;
+    }
+    .upload-img {
+        width: 70px;
+        height: 70px;
+    }
+    form input[type='submit'] {
+        height: 30px;
+        margin: 10px 0;
+    }
+}
